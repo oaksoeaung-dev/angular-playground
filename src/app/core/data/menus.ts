@@ -1,5 +1,5 @@
 import { LucideHouseHeart, LucideLibraryBig } from '@lucide/angular';
-import { MenuNode } from '../../shared/components/menu/interfaces/MenuNode';
+import { MenuNode } from '../../shared/components/menu/interfaces/menu-node';
 
 export const MENUS: MenuNode[] = [
   {

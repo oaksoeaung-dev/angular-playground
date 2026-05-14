@@ -4,8 +4,8 @@ import { PanelMenu, PanelMenuModule, PanelMenuPassThroughOptions } from 'primeng
 import { Ripple } from 'primeng/ripple';
 import { MENUS } from '../../../core/data/menus';
 import { NavigationEnd, Router, RouterModule } from '@angular/router';
-import { MenuNode } from './interfaces/MenuNode';
 import { filter } from 'rxjs';
+import { MenuNode } from './interfaces/menu-node';
 
 @Component({
   selector: 'app-menu',
