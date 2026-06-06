@@ -1,0 +1,8 @@
+<div class="flex items-center gap-2 rounded-lg border border-gray-200 p-1">
+  <div class="rounded-full bg-blue-50 ring ring-blue-100">
+    <img [ngSrc]="image()" width="30" height="30" [alt]="fullName()" />
+  </div>
+  <div class="flex flex-col text-sm font-medium">
+    <span class="text-gray-600">{{ fullName() }}</span>
+  </div>
+</div>

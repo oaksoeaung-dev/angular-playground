@@ -1,13 +1,7 @@
 <p-panelMenu [model]="menus()" class="w-full" [pt]="menuStyle">
   <ng-template #item let-item>
     @let classes = getIconClasses(item.iconColor);
-    <a
-      [routerLink]="item.routerLink"
-      pRipple
-      class="group flex cursor-pointer items-center px-4 py-2"
-      routerLinkActive="bg-slate-100 rounded-lg"
-      [routerLinkActiveOptions]="{ exact: true }"
-    >
+    <a [routerLink]="item.routerLink" pRipple class="group flex cursor-pointer items-center px-4 py-2" routerLinkActive="bg-slate-100 rounded-lg" [routerLinkActiveOptions]="{ exact: true }">
       @if (item.lucideIcon) {
         <div class="rounded-sm ring shrink-0 p-1 {{ classes.wrapper }}">
           <svg class="{{ classes.stroke }}" [lucideIcon]="item.lucideIcon" size="12" />
@@ -20,12 +14,7 @@
       <span class="ms-2 w-30 truncate">{{ item.label }}</span>
       @if (item.items) {
         <div class="text-muted-color ms-auto p-1 text-sm">
-          <svg
-            lucideChevronRight
-            size="12"
-            class="shrink-0 stroke-gray-400 transition-transform duration-300"
-            [class.rotate-90]="item.expanded"
-          />
+          <svg lucideChevronRight size="12" class="shrink-0 stroke-gray-400 transition-transform duration-300" [class.rotate-90]="item.expanded" />
         </div>
       }
     </a>

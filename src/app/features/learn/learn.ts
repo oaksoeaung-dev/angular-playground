@@ -5,6 +5,5 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-learn',
   imports: [RouterOutlet],
   templateUrl: './learn.html',
-  styleUrl: './learn.css',
 })
 export class Learn {}
